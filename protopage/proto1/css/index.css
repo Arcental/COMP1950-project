@@ -33,13 +33,12 @@ header{
 
 /* nav */
 
-#mainnav{
+#mainnav, #lecturenav{
     width: 100%;
-    box-shadow: 0 2px 4px -2px #999999;
     background: white;
 }
 
-#mainnav ul{
+#mainnav ul, #lecturenav ul{
     margin: 0 auto;
     width: 1200px;
     list-style-type: none;
@@ -48,11 +47,11 @@ header{
     overflow: hidden;
 }
 
-#mainnav li{
+#mainnav li, #lecturenav li{
     float: left;
 }
 
-#mainnav a:link, #mainnav a:visited{
+#mainnav a:link, #mainnav a:visited, #lecturenav a:link, #lecturenav a:visited, #lecturenavlable{
     display: block;
     text-align: center;
     width: 120px;
@@ -61,8 +60,20 @@ header{
     transition: background 0.3s;
 }
 
-#mainnav a:hover, #mainnav a:active{
+#mainnav a:hover, #mainnav a:active, #lecturenav a:hover, #lecturenav a:active{
     background: rgba(255, 26, 26, 0.30);
+}
+
+/* for lecture nav */
+
+#lecturenav{
+    box-shadow: 0 3px 5px -3px #8c8c8c;
+    border-top: 2px solid #e6e6e6;
+}
+
+#lecturenav a:link, #lecturenavlable{
+    padding: 3px 0;
+    width: 70px;
 }
 
 /* -----------------------
@@ -107,6 +118,7 @@ main section .content{
 
 main section .content p{
     margin: 0;
+    text-indent: 20px;
 }
 
 main section .exerciselink{
@@ -149,7 +161,8 @@ aside #quicknav a:link, aside #quicknav a:visited, aside #quicknav .quicknavbloc
 }
 
 aside #quicknav .quicknavblock{
-    background: rgba(128, 128, 128, 0.3)
+    background: rgba(128, 128, 128, 0.3);
+    border-bottom: 2px solid black;
 }
 
 aside #quicknav a:hover, aside #quicknav a:active{
