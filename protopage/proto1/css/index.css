@@ -85,9 +85,9 @@ header{
 }
 
 main{
-    width: 950px;
-    padding: 10px;
     float: left;
+    width: 950px;;
+    padding: 10px;
 }
 
 /* Topic boxes and lecture content */
