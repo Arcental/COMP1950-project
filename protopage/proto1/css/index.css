@@ -1,0 +1,185 @@
+/* Davis Pham & Olga */
+
+
+body{
+    font-size: 15px;
+    background: #e6e6e6;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* -----------------------
+    HEADER STUFF */
+
+header{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* header banner */
+
+#banner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#banner h1{
+    margin: 0;
+    text-indent: 100px;
+}
+
+/* nav */
+
+#mainnav{
+    width: 100%;
+    box-shadow: 0 2px 4px -2px #999999;
+    background: white;
+}
+
+#mainnav ul{
+    margin: 0 auto;
+    width: 1200px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#mainnav li{
+    float: left;
+}
+
+#mainnav a:link, #mainnav a:visited{
+    display: block;
+    text-align: center;
+    width: 120px;
+    padding: 8px 0;
+    border-right: 2px solid #e6e6e6;
+    transition: background 0.3s;
+}
+
+#mainnav a:hover, #mainnav a:active{
+    background: rgba(255, 26, 26, 0.30);
+}
+
+/* -----------------------
+    MAIN CONTENT */
+
+#wrapper{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+main{
+    width: 950px;
+    padding: 10px;
+    float: left;
+}
+
+/* Topic boxes and lecture content */
+
+main section{
+    background: white;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background: white;
+}
+
+main section .contentbox{
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+main section h3{
+    margin: 0 0 15px 0;
+    padding: 5px;
+    background: rgba(255, 0, 0, 0.25);
+}
+
+main section .content{
+    background: #f2f2f2;
+    padding: 20px;
+}
+
+main section .content p{
+    margin: 0;
+}
+
+main section .exerciselink{
+    margin: 5px;
+    padding: 5px 15px;
+    background: rgba(36, 143, 36, 0.45);
+}
+
+main section .exerciselink:hover, main section .exerciselink:active{
+    background: rgba(36, 143, 36, 0.30);
+}
+
+/* Lecture quick nav */
+
+aside{
+    width: 210px;
+    padding: 10px;
+    float: right;
+}
+
+aside #quicknav{
+    background: white;
+    border-radius: 4px;
+}
+
+aside #quicknav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+aside #quicknav a:link, aside #quicknav a:visited, aside #quicknav .quicknavblock{
+    text-indent: 12px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 6px solid #e6e6e6;
+    transition: all 0.35s;
+}
+
+aside #quicknav .quicknavblock{
+    background: rgba(128, 128, 128, 0.3)
+}
+
+aside #quicknav a:hover, aside #quicknav a:active{
+    background: rgba(255, 26, 26, 0.30);
+}
+
+aside #quicknav .navexercise{
+    background: rgba(36, 143, 36, 0.15);
+}
+
+aside #quicknav .navhw{
+    background: rgba(255, 0, 0, 0.15);
+    position: relative;
+}
+
+aside #quicknav .navduedate{
+    visibility: hidden;
+    width: 100px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    background: rgba(128, 128, 128, 0.65);
+    
+    /* Positioning of the little tool tip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+}
+
+aside #quicknav .navhw:hover .navduedate{
+    visibility: visible;
+}
