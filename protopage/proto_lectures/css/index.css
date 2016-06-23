@@ -49,7 +49,7 @@ nav li{
     float: left;
 }
 
-nav a:link, a:visited{
+nav a:link,nav a:visited{
     display: block;
     text-align: center;
     width: 198px;
@@ -226,5 +226,9 @@ footer ul{
 }
 
 footer a{
-    color: orange;
+    color: #ff8080;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
