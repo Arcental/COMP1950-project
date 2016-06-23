@@ -1,0 +1,230 @@
+/* Davis Pham & Olga */
+
+body{
+    background-image: url("gplaypattern.png");
+    background-repeat: repeat;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+/* --------------
+        HEADER */
+
+
+header{
+    margin-top: 15px;
+    width: 100%;
+    background: white;
+    box-shadow: 4px 4px 5px #ccc;
+}
+
+/* --------------
+         NAV */
+
+nav{
+    width: 1200px;
+    margin: 0 auto;
+    height: 68px;
+}
+
+nav ul{
+    width: 1200px;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li{
+    float: left;
+}
+
+nav a:link, a:visited{
+    display: block;
+    text-align: center;
+    width: 198px;
+    padding: 8px 0;
+    border-right: 2px solid #ccc;
+    transition: all 0.35s;
+    color: black;
+}
+
+nav a:hover, nav a:active{
+    background-color: rgba(230, 0, 0, 0.5);
+}
+
+nav #logo a{
+    padding: 25px 0;
+    font-weight: 600;
+    background-color: rgba(230, 0, 0, 0.3);
+    color: white;
+}
+
+nav #logo{
+    background-image: url("logo-back.jpg");
+}
+
+nav li:nth-child(6) a{
+    border-width: 0;
+}
+
+/* --------------
+        LECTURE STUFF */
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+}
+
+/* FLIPBOOK PAGE CSS */
+
+
+#lectureflip .page{
+    background-image: url("textured_paper.png");
+    background-repeat: repeat;
+}
+
+#lectureflip .hard{
+    text-align: center;
+    line-height: 700px;
+    font-size: 30px;
+}
+
+/* LECTURE CONTENT CSS (INSIDE THE FLIP BOOK) */
+
+.lecturebox{
+    width: auto;
+    background: white;
+    box-shadow: 4px 4px 5px #ccc;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+div .lecturebox:first-of-type{
+    margin-top: 18px;
+}
+
+.lecturebox p{
+    margin: 5px;
+    text-indent: 20px;
+}
+
+.lecturebox h3{
+    padding: 4px 0;
+    border-radius: 2px;
+    margin: 0;
+    text-indent: 20px;
+    background: rgba(230, 0, 0, 0.4);
+}
+
+.note{
+    padding: 0;
+    background-color: #4db8ff;
+    width: 155px;
+    min-height: 150px;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transform: rotate(1deg);
+    -o-transform:rotate(1deg);
+    -webkit-transform:rotate(1deg);
+    -moz-transform:rotate(1deg);
+}
+
+.note h3{
+    background: rgba(0, 0, 0, 0.10);
+    width: 100%;
+}
+
+.note p{
+    text-indent: 0;
+    margin: 9px;
+}
+
+.greennote{
+    background: #98e698;
+}
+
+.rednote{
+    background: #ff8080;
+}
+
+.examplecode{
+    text-indent: 0;
+    margin: 10px;
+    padding: 10px;
+    background: #e6e6e6;
+    border-radius: 6px;
+    border: 2px solid #808080;
+}
+
+.exercise{
+    background: #ffd1b3;
+    border: 2px solid #ff8533;
+}
+
+.exercise a{
+    background: #99ccff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+    transition: all 0.3s;
+}
+
+.exercise a:hover{
+    background: #b3daff;
+}
+
+#lectureflip .homework{
+    margin: 300px 25px;
+}
+
+
+/* --------------
+        FOOTER STUFF */
+
+
+footer{
+    width: 100%;
+    background: white;
+    height: 240px;
+}
+
+footer div{
+    margin: 10px auto 0 auto;
+    width: 650px;
+}
+
+footer div h5{
+    text-align: center;
+}
+
+footer div h4{
+    border-bottom: 1px solid black;
+}
+
+footer div div{
+    width: 300px;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer a{
+    color: orange;
+}
