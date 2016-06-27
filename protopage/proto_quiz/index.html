@@ -17,9 +17,9 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Course Outline</a></li>
                     <li><a href="#">Lectures</a></li>
-                    <li><a href="#">Contacts</a></li>
                     <li><a href="#">Resources</a></li>
                     <li><a href="#">Student</a></li>
+                    <li id="search"> <input type="text" name="search" placeholder="Search"> </li>
                 </ul>
             </nav>
         </header>
@@ -30,6 +30,7 @@
         <main>
             <h2> Quiz four </h2>
             
+            <!-- Start of quiz items -->
             <div class="contentbox">
                 <p> Recommended time: 25 minutes </p>
                 <p> Saving between questions is highly recommended </p>
@@ -77,6 +78,7 @@
                     <button type="button" class="button"> Save </button>
                     <button tpye="submit" class="button"> Submit <span class="btnwarning"> You can not go back after submitting!!! </span> </button>
                 </div>
+                <!-- End of quiz -->
                 
             </form>
             
@@ -102,13 +104,21 @@
                 </div>
                 <div class="right">
                     <h4> Lectures </h4>
-                    <ul>
+                    <ul class="left">
                         <li><a href="#"> Lecture 1</a></li>
                         <li><a href="#"> Lecture 2</a></li>
                         <li><a href="#"> Lecture 3</a></li>
                         <li><a href="#"> Lecture 4</a></li>
-                        <li><a href="#"> Lecture 5</a></li>
-                        <li><a href="#"> Lecture 6</a></li>
+                        <li><a href="#" class="closed"> Lecture 5</a></li>
+                        <li><a href="#" class="closed"> Lecture 6</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="#" class="closed"> Lecture 7</a></li>
+                        <li><a href="#" class="closed"> Lecture 8</a></li>
+                        <li><a href="#" class="closed"> Lecture 9</a></li>
+                        <li><a href="#" class="closed"> Lecture 10</a></li>
+                        <li><a href="#" class="closed"> Lecture 11</a></li>
+                        <li><a href="#" class="closed"> Lecture 12</a></li>
                     </ul>
                 </div>
             </div>

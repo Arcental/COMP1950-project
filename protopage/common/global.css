@@ -4,6 +4,7 @@ body{
     background-image: url("gplaypattern.png");
     background-repeat: repeat;
     margin: 0px;
+    font-size: 1.27vw;
 }
 
 a{
@@ -35,7 +36,7 @@ header{
 nav{
     width: 1200px;
     margin: 0 auto;
-    height: 68px;
+    overflow: hidden;
 }
 
 nav ul{
@@ -47,6 +48,21 @@ nav ul{
 
 nav li{
     float: left;
+}
+
+nav #search input{
+    margin-top: 4px;
+    padding: 4px 6px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+nav #search input:focus{
+    width: 900px;
+}
+
+nav #search{
+    width: 1000px;
 }
 
 nav a:link,nav a:visited{
@@ -64,7 +80,7 @@ nav a:hover, nav a:active{
 }
 
 nav #logo a{
-    padding: 25px 0;
+    padding: 2.48vw 0;
     font-weight: 600;
     background-color: rgba(230, 0, 0, 0.3);
     color: white;
@@ -84,15 +100,17 @@ nav li:nth-child(6) a{
 
 
 footer{
+    margin-top: 5vw;
     width: 100%;
     background: white;
-    height: 240px;
+    overflow: hidden;
+    padding-bottom: 25px;
     box-shadow: 4px 4px 5px #ccc;
 }
 
 footer div{
     margin: 10px auto 0 auto;
-    width: 650px;
+    width: 30vw;
 }
 
 footer div h5{
@@ -100,17 +118,23 @@ footer div h5{
 }
 
 footer div h4{
-    border-bottom: 1px solid black;
+    border-bottom: 0.1vw solid black;
 }
 
 footer div div{
-    width: 300px;
+    width: 14vw;
 }
 
 footer ul{
+    width: 7vw;
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+footer .closed{
+    color: #ccc;
+    cursor: not-allowed;
 }
 
 footer a{
