@@ -1,0 +1,74 @@
+/* Davis Pham & Olga */
+
+/* --------------
+        QUIZ STUFF */
+main{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/* QUIZ CSS */
+
+.button{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    margin: 10px 20px 0 0;
+    background: white;
+    border: 3px solid rgba(230, 0, 0, 0.5);
+    border-radius: 3px;
+    transition: all 0.15s;
+}
+
+.button:hover{
+    background: rgba(230, 0, 0, 0.5);
+}
+
+.contentbox{
+    width: auto;
+    background: white;
+    box-shadow: 4px 4px 5px #ccc;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+.button .btnwarning {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+
+.button .btnwarning::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.button:hover .btnwarning{
+    visibility: visible;
+}
